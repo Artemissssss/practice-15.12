@@ -1,7 +1,9 @@
 import {useState, useRef, useEffect} from 'react'
+import {useNavigate} from "react-router-dom"
+import ReactDOM from 'react-dom'
 import ModalImg from '../ModalImg/ModalImg';
 import style from './Card.module.css'
-function Card({ img, model, text  }) {
+function Card({ img, model, text , id }) {
 const [onHover, setOnHover] = useState(false);
 const [onModule, setOnModule] = useState(false);
 const textWrap = useRef()
@@ -14,8 +16,10 @@ useEffect(() => {
     textWrap.current.style.height = `56px`
 }
 }, [onHover]);
+const navigate = useNavigate()
 const ModalImgFunc = () => {
-  setOnModule(true)
+navigate(`/product/${id}`)
+setOnModule(true)
 }
   return (
     <>
@@ -30,7 +34,8 @@ const ModalImgFunc = () => {
         </div>
     </div>
     </div>
-    {onModule ? <ModalImg img={img}/> : null}
+    {/* {onModule ? <ModalImg img={img}/> : null} */}
+    {onModule ? ReactDOM.createPortal(<ModalImg img={img}/>, document.body) : null}
     </>
   )
 }
