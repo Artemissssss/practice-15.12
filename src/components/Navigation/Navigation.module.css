@@ -1,0 +1,29 @@
+.navSect {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 150px auto;
+}
+
+.logoWrap {
+    width: 137px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.logoLink {
+    font-family: 'Rajdhani', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #252A34;
+}
+
+.spanLogo {
+    color: #FF2E63;
+}
