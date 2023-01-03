@@ -4,8 +4,7 @@ import {useMemo} from "react"
 function CardD() {
     const params = useParams()
     const detal = useMemo(()=>{
-        return(data.find((item)=>{return item.key+"" ===params.id}))
-        
+        return(data.find((item)=>{return item.key+"" === params.id}))
     },[params,data])
   return (
     <div>

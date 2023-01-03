@@ -2,6 +2,12 @@
     width: 25%;
     padding: 0 8px;
 }
+.carItemWrap:first-child{
+    padding-left: 0;
+}
+.carItemWrap:last-child{
+    padding-right: 0;
+}
 .CardItem {
     padding-bottom: 10px;
     background: #FFFFFF;

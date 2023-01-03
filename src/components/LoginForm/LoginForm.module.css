@@ -1,0 +1,66 @@
+.form {
+    width: 398px;
+    height: 338px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginIn {
+    width: 289px;
+    height: 58px;
+    border: 1px solid #C0C0C0;
+    border-radius: 10px;
+    padding: 17px 16px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-top: 45px;
+    margin-bottom: 35px;
+    font-family: 'Rajdhani', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #C0C0C0;
+}
+
+.loginIn:nth-of-type(2) {
+    margin-top: 0;
+}
+
+.loginIn::placeholder {
+    font-family: 'Rajdhani', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #C0C0C0;
+}
+
+.loginIn:focus {
+    outline: #FF2E63;
+    border: 1px solid #FF2E63;
+}
+
+.submit {
+    width: 289px;
+    height: 58px;
+    background: #FF2E63;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rajdhani',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
